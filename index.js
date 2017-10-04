@@ -19,7 +19,7 @@ module.exports = {
 
 			if(attr !== ''){
 				returnArray.push({
-					"attribute": attr,
+					"attribute": attr.trimI(),
 					"value": part.substr(attrColon+1).trim()
 				});
 			}
